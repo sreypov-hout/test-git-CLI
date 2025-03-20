@@ -26,5 +26,19 @@
         git branch -M main
         git push -u origin main
     </pre>
+
+    <h2>Update by use SSH keygen</h2>
+    <p>Examlpe</p>
+    <pre>generate ssh key
+        cmd : ssh-keygen -t ed25519 -C "your_email@example.com"
+
+        Add a new SSH Key 
+        cmd : clip < ~/.ssh/id_ed25519.pub
+
+        go to your acc click settings 
+        -> SSH and GPG keys 
+        -> New SSH Key 
+        -> create name and paste the key from clipboard
+    </pre>
 </body>
 </html>
